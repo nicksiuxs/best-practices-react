@@ -1,7 +1,4 @@
-
-import './App.css';
 import useWindowSize from './hooks/useWindowSize';
-
 
 export default function App() {
   const windowSize = useWindowSize();
