@@ -1,14 +1,13 @@
-import UserProfile from './components/UserProfile';
-import useWindowSize from './hooks/useWindowSize';
+import ProductApp from './hooksExamples/useReducer/ProductApp/ProductApp';
+import TodoApp from './hooksExamples/useReducer/TodoApp';
 
 export default function App() {
-  const windowSize = useWindowSize();
 
   return (
     <>
-      <UserProfile />
-      <p>Current screen width: {windowSize.width}</p>
-      <p>Current screen height: {windowSize.height}</p>
+      {/* <CounterApp /> */}
+      {/* <TodoApp /> */}
+      <ProductApp />
     </>
   )
 }
