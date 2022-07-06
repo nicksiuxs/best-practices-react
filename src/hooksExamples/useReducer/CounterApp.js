@@ -9,6 +9,17 @@ const TYPES = {
     RESET: 'RESET'
 }
 /**
+ * Initial state to the reducer
+ */
+const initialState = 0;
+/**
+ *  función para mutar el estado incial
+ * @param {*} value initialState
+ */
+const initFunction = (value) => {
+    return value + 1
+}
+/**
  * Un reducer es una función recibe como párametros
  * el state (estado previo) y el action  y retornará un state (nuevo state )
  */
@@ -19,7 +30,7 @@ const counterReducer = (state, action) => {
         case TYPES.DECREMENT:
             return state - 1;
         case TYPES.RESET:
-            return 0;
+            return initialState;
         default:
             return state
     }
@@ -34,7 +45,7 @@ const CounterApp = () => {
      * reducers: para nada interacturan con reducers externos
      * el dispatch recibe un objeto conocido como action que tiene un type 
      */
-    const [counter, counterDispatch] = useReducer(counterReducer, 0);
+    const [counter, counterDispatch] = useReducer(counterReducer, initialState, initFunction);
     return (
         <main className="flex flex-col items-center justify-center h-screen bg-slate-400">
             <section className='w-1/2 h-1/3 rounded overflow-hidden shadow-lg p-4 bg-white flex flex-col justify-between'>
