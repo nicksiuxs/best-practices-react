@@ -1,4 +1,4 @@
-# Conceptos usReducer
+# Conceptos useReducer
 
 ## Función pura:
 
