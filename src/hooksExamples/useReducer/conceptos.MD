@@ -44,4 +44,4 @@ function addNumberToArray(arr, n) {
 
 - Cuando se tiene una lógica compleja que involucra subvalores.
 - Cuando el próximo estado depende del anterior.
-- Cuando sobre un estado se realizan muchas acciones distintas paraactualizarlo.
+- Cuando sobre un estado se realizan muchas acciones distintas para actualizarlo.
